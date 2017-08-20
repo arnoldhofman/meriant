@@ -34,6 +34,6 @@ namespace meriant { namespace graphics {
         static bool isMouseButtonPressen(unsigned int keycode);
     private:
         bool init();
-        friend void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);    
+        friend static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);    
     };
 } }
